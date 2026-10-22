@@ -1,0 +1,251 @@
+.account{
+    margin-top: 80px;
+    padding: 0 168px;
+    margin-bottom: 200px;
+}
+.account h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 40px;
+}
+.account__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.account_block{
+    margin-top: 60px;
+    padding: 0 40px;
+}
+.account__menu-item a:hover{
+    transform: translateY(-2px);
+}
+.account__menu-item a{
+    transition: 0.3s ease;
+    border-bottom: 1px solid #CCCCCC;
+    color: #474A51;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.account__exit a {
+    color: #999999;
+}
+.account__delete-profile a{
+    color: #FF4000;
+}
+.account__menu-item--notification-block{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* Delete Dialog */
+#leaveDialog,
+#deleteDialog{
+    width: 1020px;
+    border-radius: 8px;
+    border:none;
+    overflow: hidden;
+}
+.leave-dialog__content,
+.delete-dialog__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px;
+}
+.leave-dialog__content h1,
+.delete-dialog__content h1{
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.leave-dialog__content p,
+.delete-dialog__content p{
+    font-family: Inter, sans-serif;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.leave-dialog__content button,
+.delete-dialog__content button{
+    width: 170px;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding:16px 20px;
+}
+.leave-dialog__choose-block,
+.delete-dialog__choose-block{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.delete-success__dialog__content{
+    display: flex;
+    justify-content: center;
+}
+.delete-success__dialog__content button{
+    width: 360px;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding:16px 20px;
+}
+.delete-success__go-to-main{
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #FFD800;
+}
+.delete-success__go-to-main:hover{
+    background: #FFD800;
+    color: white
+}
+#delete-success__message{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+/* Tablet */
+@media (max-width: 1024px) {
+    .account{
+        margin-top: 60px;
+        padding: 0 40px;
+    }
+}
+/* Mobile */
+@media (max-width: 765px) {
+    .account{
+        margin-top: 60px;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+    .account h1{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .account__menu-item a{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .account_block{
+        margin-top: 40px;
+    }
+    .account__menu,
+    .account__menu-item--notification-block {
+        gap: 16px;
+    }
+    .account__menu-item svg{
+        width: 16px;
+        height: 16px;
+    }
+    .account__menu-item--notification-block svg{
+        width: 20px;
+        height: 20px;
+    }
+    .leave-dialog__content,
+    .delete-dialog__content{
+        gap: 20px;
+        padding: 60px 20px;
+    }
+    .leave-dialog__content h1,
+    .delete-dialog__content h1{
+        text-align: start;
+        font-size: 22px;
+        line-height: 28px;
+        max-width: 65%;
+    }
+    .leave-dialog__content p,
+    .delete-dialog__content p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .leave-dialog__content button,
+    .delete-dialog__content button{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+}
+
+.profile-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.profile-actions .account__menu-item { list-style: none; }
+.profile-actions .account__exit a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 64px;
+    min-height: 64px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border: 1px solid #d9dde5;
+    border-radius: 6px;
+    background: transparent;
+    color: #474a51;
+    font: 700 18px/24px Inter, sans-serif;
+    text-decoration: none;
+    transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.profile-actions .account__exit a:hover {
+    border-color: #ffd800;
+    background-color: #ffd800;
+    color: #474a51;
+}
+@media (max-width: 765px) {
+    .profile-actions .account__exit a { height: 56px; min-height: 56px; }
+}

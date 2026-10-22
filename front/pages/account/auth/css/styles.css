@@ -1,0 +1,363 @@
+.recoverCodeDialog,
+.forgot-password,
+.auth,
+.registration{
+    margin: 60px 0 40px;
+}
+.modal-content{
+    display: flex;
+    padding: 8px 0;
+    justify-content: space-between;
+    margin: 0 0 40px;
+}
+.dialog h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+#registrationDialog .modal-content button{
+    cursor: pointer;
+    padding: 10px 0;
+}
+.auth__form .password-control {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    cursor: pointer;
+    fill: none;
+    stroke: #474A51;
+    transition: stroke 0.3s ease, transform 0.3s ease;
+}
+.forgot-password__form,
+.auth__form,
+.registration__form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    gap: 20px;
+}
+.modal-field{
+    color: #474A51;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    gap: 8px;
+}
+#authDialog .modal-field{
+    position: relative;
+}
+.modal-field input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+.modal-field input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-right: 30px;
+    border-bottom: 1px solid #CCCCCC;
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    outline: none;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    background:inherit;
+}
+.modal-field label,
+.modal-field h4{
+    padding: 4px 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.radio-button__gender-variant label{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+/*.dialog{*/
+/*    padding: 40px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+/*.dialog::backdrop {*/
+/*    background-color: rgba(0, 0, 0, 0.5); !* Полупрозрачный фон *!*/
+/*}*/
+/*.dialog{*/
+/*    padding: 40px;*/
+/*    width: 1100px;*/
+/*    top: 0;*/
+/*    opacity: 0;*/
+/*    border: 1px solid var(--grey-color-20);*/
+/*    border-radius: 8px;*/
+/*    z-index: 1000;*/
+/*    transform: translateY(-20px);*/
+/*    transition: opacity 0.3s ease, transform 0.3s ease;*/
+/*}*/
+/*.dialog.show {*/
+/*    opacity: 1;*/
+/*    transform: translateY(0);*/
+/*}*/
+#authDialog::-webkit-scrollbar,
+#registrationDialog::-webkit-scrollbar{
+
+    width: 6px;
+}
+#authDialog::-webkit-scrollbar-thumb,
+#registrationDialog::-webkit-scrollbar-thumb {
+    background: #474A51;
+    border-radius: 20px;
+}
+
+
+#forgotPasswordDialog .close-dialog,
+#registrationDialog .close-dialog{
+    display: flex;
+    justify-content: space-between;
+}
+#forgotPasswordDialog .close-dialog svg:first-child,
+#registrationDialog .close-dialog svg:first-child{
+    transform: rotate(180deg);
+}
+#recoverCodeDialog .close-dialog,
+#authDialog .close-dialog{
+    display: flex;
+    justify-content: flex-end;
+}
+.close-dialog{
+    outline: none;
+}
+.close-dialog svg{
+    cursor: pointer;
+}
+.registration__background-empty{
+    height: 100vh;
+}
+.modal-submit-button{
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 360px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #FFD800;
+    padding:16px 64px;
+    border-radius: 8px;
+    color:#474A51;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.modal-submit-button:hover{
+    color: white;
+    background-color: #FFD800;
+}
+
+.registration__submit-block{
+    margin-top: 40px;
+}
+.registration__submit-block a{
+    text-decoration: none;
+    float:left;
+}
+.modal__choose-block a{
+    text-decoration: none;
+}
+.auth__go-to-register{
+    width: 360px;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Inter, sans-serif;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: inherit;
+    padding:16px 32px;
+    border-radius: 8px;
+    color:#474A51;
+    border: 2px solid #FFD800;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.auth__go-to-register:hover{
+    background:#FFD800;
+    color: white;
+}
+.modal__choose-block{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-self: flex-start;
+}
+.recover-code__annotation,
+.auth__annotation{
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+.auth__forgot-password{
+    margin-top: 60px;
+    align-self: flex-start;
+}
+.auth__forgot-password button{
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFA500;
+}
+#gender-choose span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.modal-field textarea{
+    opacity: 0;
+}
+#recoverCodeDialog .modal-field {
+    border-radius: 8px;
+    border: 1px solid var(--grey-color-20)
+}
+#otp_target .fake-inputs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.otp-fake-input{
+    border-radius: 8px;
+    border: 2px solid #FFD800;
+    width: 93px !important;
+    height: 64px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-not-exist-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    gap: 20px
+}
+.user-not-exist-content p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none
+}
+.user-not-exist-content a{
+    color:#FFA500;
+    text-decoration: none;
+}
+#failedLoginDialog .close-dialog,
+#userNotExistDialog .close-dialog {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+    .dialog{
+        width: auto;
+        margin: 0 42px;
+    }
+}
+/* Mobile */
+@media (max-width: 765px) {
+    .auth, .registration{
+        margin: 40px 0 40px;
+    }
+    .modal-content{
+        margin: 0 0 20px;
+    }
+    .modal-content h1{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .close-dialog svg{
+        width: 16px;
+        height: 16px;
+    }
+    .dialog{
+        margin: 0;
+        padding: 20px;
+    }
+    .modal__choose-block{
+        align-self: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .auth__go-to-register,
+    .modal-submit-button{
+        padding: 16px 32px;
+        font-size: 18px;
+        width: 100%;
+        line-height: 24px;
+    }
+    .recover-code__annotation,
+    .forgot-password__annotation,
+    .auth__annotation{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .forgot-password__form{
+        padding-bottom: 0;
+    }
+    .auth__forgot-password button{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    #otp_target .fake-inputs{
+        gap: 24px;
+    }
+    .otp-fake-input{
+        width: 45px !important;
+        height: 56px !important;
+    }
+
+}

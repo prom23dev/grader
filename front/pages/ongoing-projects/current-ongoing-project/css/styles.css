@@ -1,0 +1,208 @@
+.current-project{
+    margin-top: 80px;
+    padding: 20px 168px;
+}
+.current-project__title-and-share{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:8px 0;
+}
+.current-project__title-and-share svg:hover{
+    fill:#474A51 ;
+}
+.current-project__donate-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.current-project__donate-title h2{
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.current-project__share{
+    cursor: pointer;
+}
+.current-project__mobile-share{
+    display: none;
+}
+.current-project__address-annotation{
+    color:#474A51;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.current-project__title-and-share h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.current-project__images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 8px;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+.current-project__images img{
+    max-width: 100%;
+    width: 100%;
+}
+.current-project__date-and-username{
+
+    padding:4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.current-project__date-and-username h3{
+    color:#FFA500;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.current-project__project-cost, .current-project__project-total-money-collected{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC;
+    padding:8px 0;
+}
+.current-project__project-cost h3, .current-project__project-total-money-collected h3{
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #474A51;
+}
+.current-project__information-block{
+    padding: 20px 0;
+}
+.current-project__support-button{
+    display: flex;
+    align-self: flex-start;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #FFD800;
+    padding:16px 64px;
+    border-radius: 8px;
+    color:#474A51;
+    cursor: pointer;
+}
+.current-project__budget{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.current-project__grading-addition-material--text{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#474A51;
+    padding: 8px 0;
+}
+.current-project__description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom:24px;
+    margin-top:8px;
+    padding: 8px 0;
+    color:#474A51;
+}
+.current-project__investors{
+    margin-top:28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 200px;
+}
+.current-project__investors-item h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.current-project__investors-title{
+    color: #474A51;
+    font-weight: 700;
+    text-align: center
+}
+.current-project__investors-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.current-project__investors-item{
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    padding: 16px 20px 4px;
+    align-items: center;
+    justify-content: space-between
+}
+.current-project__table_caption h2{
+    color: #474A51;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.current-projects__main--content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 28px 40px;
+}
+.current-project__completed-date{
+    font-size: 18px;
+    padding: 8px;
+}
+.current-project__completed-date h2{
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.current-project__completed-block{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.current-project__feedback-button{
+    border: 2px solid #FFD800;
+    background: inherit;
+}
+
+.breadcrumb-current-page-mobile{
+    display: none;
+}
+

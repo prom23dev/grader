@@ -1,0 +1,261 @@
+.about{
+    margin-top: 80px;
+    padding: 20px 40px;
+    margin-bottom: 116px;
+}
+.about__main--content{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.about__main--content h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 0;
+}
+.about__main--content h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 0;
+}
+.about__support-text a{
+    text-decoration: none;
+    color: #FFA500;
+}
+.about__about-you,
+.about__documents,
+.about__main--information{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about__links{
+    display: flex;
+    flex-direction: column;
+}
+.about__links a{
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #474A51;
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--grey-color-20);
+}
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+#FAQ__accordion{
+    transition: 0.3s svg ease-out;
+}
+.FAQ__accordion-item{
+    display: grid;
+    grid-auto-flow: column;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--grey-color-20);
+    border-radius: 8px;
+}
+.FAQ__accordion-item h4{
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.FAQ__accordion-content{
+    padding: 40px;
+    border-bottom: 1px solid var(--grey-color-20);
+    border-radius: 8px;
+}
+@media (max-width: 1024px){
+    .about{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 765px){
+    .about__main--content{
+        gap: 40px;
+    }
+    .about{
+        margin-top: 20px;
+        padding: 0;
+    }
+    .about__main--content h1{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .FAQ__accordion-item{
+        padding: 22px 8px;
+        align-items: center;
+        border-radius: 0;
+    }
+    .FAQ__accordion-content{
+        padding: 40px 16px;
+    }
+    .about__links{
+        gap: 20px;
+    }
+    .FAQ__accordion-item h4,
+    .about__links a{
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .about__about-you p,
+    .about__support-text,
+    .about__main--information p,
+    .FAQ__accordion-content p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .about__main--content h2{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
+
+/* Стили для модального окна согласия на обработку персональных данных */
+#personalDataDialog li {
+    list-style-type: disc !important;
+}
+
+#personalDataDialog {
+    padding: 40px;
+    width: 800px;
+    max-width: 90vw;
+    top: 0;
+    opacity: 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    z-index: 1000;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#personalDataDialog.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#personalDataDialog .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#personalDataDialog .closeModal {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#personalDataDialog .closeModal svg {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+#personalDataDialog .closeModal svg:hover {
+    fill: #FFA500;
+}
+
+#personalDataDialog h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #474A51;
+    margin: 0;
+}
+
+.personal-data-content {
+    color: #474A51;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.personal-data-content p {
+    margin: 0 0 16px 0;
+}
+
+.personal-data-content p:last-child {
+    margin-bottom: 0;
+}
+
+.personal-data-content ul {
+    margin: 16px 0;
+    padding-left: 20px;
+    list-style-type: disc !important;
+    list-style-position: outside !important;
+    list-style-image: none !important;
+}
+
+.personal-data-content li {
+    margin: 8px 0;
+    line-height: 1.5;
+    display: list-item !important;
+    list-style-type: disc !important;
+    list-style-position: outside !important;
+}
+
+@media (max-width: 768px) {
+    #personalDataDialog {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #personalDataDialog h1 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .personal-data-content {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .personal-data-content ul {
+        padding-left: 16px;
+        list-style-type: disc !important;
+        list-style-position: outside !important;
+        list-style-image: none !important;
+    }
+
+    .personal-data-content li {
+        margin: 6px 0;
+        display: list-item !important;
+        list-style-type: disc !important;
+        list-style-position: outside !important;
+    }
+}

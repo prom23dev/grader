@@ -1,0 +1,6 @@
+<?php
+const PROJECTS_IBLOCK_ID = 1;
+const NEWS_IBLOCK_ID = 2;
+const REVIEWS_IBLOCK_ID = 3;
+const NOTIFICATION_IBLOCK_ID = 4;
+const CALL_BACK_IBLOCK_ID = 5;

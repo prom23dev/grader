@@ -1,0 +1,72 @@
+<?
+global $MESS;
+
+$MESS["SALE_TBANK_TITLE"]="Т-Банк";
+$MESS['SALE_TBANK_DESCRIPTION'] = 'https://www.tbank.ru/kassa/';
+ 
+$MESS["SALE_TBANK_TERMINAL_ID_NAME"]="Терминал";
+$MESS["SALE_TBANK_TERMINAL_ID_DESCR"]="Терминал доступен в Личном кабинете https://www.tbank.ru/kassa/";
+
+$MESS["SALE_TBANK_SHOP_SECRET_WORD_NAME"]="Пароль";
+$MESS["SALE_TBANK_SHOP_SECRET_WORD_DESCR"]="Пароль доступен в Личном кабинете https://www.tbank.ru/kassa/";
+
+$MESS["SALE_TBANK_ORDER_ID_NAME"]="Номер заказа";
+$MESS["SALE_TBANK_ORDER_ID_DESCR"]="Уникальный идентификатор заказа в системе интернет-магазина. Выберите Значение \"Номер заказа\".";
+
+$MESS["SALE_TBANK_SHOULD_PAY_NAME"]="Сумма к оплате";
+$MESS["SALE_TBANK_SHOULD_PAY_DESCR"]="Сумма оплаты. Выберите Значение \"Стоимость заказа\".";
+
+$MESS['SALE_TBANK_TAXATION_NAME'] = 'Система налогообложения';
+$MESS['SALE_TBANK_TAXATION_DESCR'] = 'Выберите систему налогообложения для Вашего магазина';
+$MESS['SALE_TBANK_TAXATION_OSN'] = 'Oбщая СН';
+$MESS['SALE_TBANK_TAXATION_USN_IMCOME'] = 'Упрощенная СН (доходы)';
+$MESS['SALE_TBANK_TAXATION_USN_IMCOME_OUTCOME'] = 'Упрощенная СН (доходы минус расходы)';
+$MESS['SALE_TBANK_TAXATION_ESN'] = 'Единый сельскохозяйственный налог';
+$MESS['SALE_TBANK_TAXATION_PATENT'] = 'Патентная СН';
+
+$MESS['SALE_TBANK_ENABLE_TAXATION_NAME'] = 'Передавать данные для формирования чека';
+$MESS['SALE_TBANK_ENABLE_TAXATION_DESCR'] = 'Данные чека будут передаваться в онлайн-кассу';
+$MESS['SALE_TBANK_YES'] = 'Да';
+$MESS['SALE_TBANK_NO'] = 'Нет';
+
+$MESS['SALE_TBANK_DELIVERY_TAXATION_NAME'] = 'Ставка налога для доставки';
+$MESS['SALE_TBANK_DELIVERY_TAXATION_DESCR'] = 'Параметр необходим для добавления информации о доставке в чек. Доставка добавляется в чек отдельной позицией.';
+$MESS['SALE_TBANK_VAT_NONE'] = 'Без НДС';
+$MESS['SALE_TBANK_VAT_ZERO'] = 'НДС 0%';
+$MESS['SALE_TBANK_VAT_FIVE'] = 'НДС 5%';
+$MESS['SALE_TBANK_VAT_SEVEN'] = 'НДС 7%';
+$MESS['SALE_TBANK_VAT_REDUCED'] = 'НДС 10%';
+$MESS['SALE_TBANK_VAT_STANDARD'] = 'НДС 18%';
+
+$MESS['SALE_TBANK_PAYBUTTON_NAME'] = 'Оплатить';
+
+$MESS['SALE_TBANK_UNAVAILABLE'] = 'Запрос к платежному сервису был отправлен некорректно. Проверьте настройки';
+
+$MESS['SALE_TBANK_EMAIL_NAME'] = 'Email пользователя';
+$MESS['SALE_TBANK_EMAIL_DESCR'] = 'Электронная почта, которую указал в заказе пользователь';
+
+$MESS['SALE_TBANK_ORDER_INFO'] = "Информация о заказе";
+$MESS['SALE_TBANK_ORDER_PAYMENT'] = "Оплата заказа";
+
+$MESS['SALE_TBANK_SUCCESS'] = "успешно";
+$MESS['SALE_TBANK_FAIL'] = "не успешно";
+$MESS['SALE_TBANK_FAIL_TEXT'] = "Заказ с номером %s не найден";
+$MESS['SALE_TBANK_SUCCESS_TEXT'] = "Заказ с номером %s оплачен %s <br/> Состояние заказа можно узнать на <a href=\"%s\">странице заказа</a>";
+
+//
+$MESS['SALE_TBANK_CONNECT_ERROR'] = "Не удалось соединиться с платёжным сервисом.";
+$MESS['SALE_TBANK_SUM_ERROR'] = 'Сумма заказа не сходится.';
+$MESS['SALE_TBANK_TOKEN_ERROR'] = 'Токены не совпадают.';
+$MESS['SALE_TBANK_STATUS_ERROR'] = 'Статус заказа не определён. Чтобы запросить статус вызовите метод getStatus';
+$MESS['SALE_TBANK_QUERY_ERROR'] = 'Не удалось отправить запрос';
+$MESS['SALE_TBANK_PAYMENT_CANCELED'] = 'оплата заказа отменена';
+
+$MESS['SALE_TBANK_FIO_NAME'] = 'Ф.И.О пользователя';
+$MESS['SALE_TBANK_FIO_DESCR'] = '';
+$MESS['SALE_TBANK_PHONE_NAME'] = 'Телефон пользователя';
+$MESS['SALE_TBANK_PHONE_DESCR'] = '';
+
+$MESS['SALE_TBANK_TAX_ERROR'] = 'Не удалось получить данные о налоге на товар. Проверьте настройки.';
+$MESS['SALE_TBANK_TAXATION_ERROR'] = 'Не удалось получить данные о системе налогообложения. Проверьте настройки.';
+$MESS['SALE_TBANK_TAX_DELIVERY_ERROR'] = 'Не удалось получить данные о налоге на доставку. Проверьте настройки.';
+?>

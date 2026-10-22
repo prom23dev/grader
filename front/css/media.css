@@ -1,0 +1,365 @@
+
+/* Ноутбуки */
+@media (max-width: 1280px) {
+    /* стили для ноутбуков */
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .container{
+        padding: 0 40px 20px;
+    }
+    #breadcrumbs {
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+
+    .header__block {
+        padding: 20px 40px;
+    }
+
+    .header__site-title {
+        padding: 8px 28px;
+    }
+
+    .header__contact-information {
+        padding: 20px 40px;
+        grid-auto-flow: row;
+        justify-content: normal;
+        grid-gap: 16px;
+    }
+
+    .header__contact-description {
+        padding: 0 20px;
+        font-weight: 400;
+    }
+
+    .header__contact-phone-number {
+        font-size: 18px;
+        text-align: end;
+    }
+
+    .search__block {
+        padding-right: 40px;
+    }
+
+    .projects__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*.projects__pagination{*/
+    /*    display: flex;*/
+    /*    position: relative;*/
+    /*}*/
+    /*.projects__pagination--prev-page{*/
+    /*    position: absolute;*/
+    /*    left: 0;*/
+    /*}*/
+    /*.projects__pagination--next-page{*/
+    /*    position: absolute;*/
+    /*    right: 0;*/
+    /*}*/
+    .projects, .projects {
+        padding: 0;
+    }
+    .projects__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .current-project{
+        margin-top: 40px;
+        padding: 0 40px;
+    }
+    .current-project__investors{
+        margin-top: 40px;
+    }
+    #footer{
+        padding: 40px 40px;
+        grid-gap: 37px;
+    }
+    .footer__mobile-social-links{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+    .footer__social-links{
+        display: none;
+    }
+    .footer__information-links{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer__tablet-copyright-text{
+        display: block;
+        padding: 0 20px;
+    }
+    .footer__mobile-list--menu{
+        padding-bottom: 20px;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    .footer__copyright-text{
+        display: none;
+    }
+    .footer__site-title{
+        align-self: flex-start;
+        padding: 8px 28px;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+
+    }
+    .footer__site-title-copyright-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+    .footer__social-links svg{
+        width: 32px;
+        height: 32px;
+    }
+    .main-page__cta{
+        padding-left: 40px;
+    }
+    .main-page__orderCallback{
+        right: 40px;
+    }
+    .main-page__content{
+        height: 85vh;
+    }
+    .main-page__benefits-list{
+        padding: 40px 0 80px;
+    }
+    .main-page__info{
+        gap: 40px;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 765px) {
+    .agreement-block .checkmark:after{
+        left: 5px;
+        width: 5px;
+        height: 10px;
+        border-width: 0 2px 2px 0;
+    }
+    .agreement-block label{
+        font-size:12px;
+    }
+    .agreement-block{
+        font-family: Inter, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        padding-left: 25px;
+    }
+    .checkmark{
+        height: 16px;
+        width: 16px;
+        top: 0;
+    }
+    .header__mobile--navigation-list{ display: flex; }
+    .header__navigation-list{
+        display: none;
+    }
+    .projects__list, .projects__list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header__contact-information{
+        grid-gap: 0;
+    }
+    .header__contact-description, .header__contact-phone-number{
+        display: none;
+    }
+    .header__mobile-contact-description{
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .header__mobile-contact-description span{
+        text-align: right;
+    }
+    .header__site-title{ padding: 0; }
+    #breadcrumbs{
+        display: none;
+    }
+    .mobile-backward{
+        display: block;
+        padding: 20px 40px;
+    }
+    .search__block{
+        display: block;
+        padding-left: 40px;
+    }
+    .search__block input{
+        width: 280px;
+        height: 40px;
+    }
+    .projects, .projects{
+        margin-top: 0;
+        padding: 8px 20px;
+    }
+
+    .projects__main--content h1{
+        padding: 8px 20px;
+        margin-bottom: 28px;
+    }
+    .current-project{
+        padding: 0;
+    }
+    .current-projects__main--content{
+        /* padding: 20px 40px; */
+        padding: 0;
+        gap: 20px;
+    }
+    .current-project__images{
+        overflow-x: scroll;
+        padding-left: 10px;
+    }
+    .current-project__images img{
+        width: 100%;
+        margin-left: -10px;
+    }
+    .current-project__title-and-share h1{
+        font-size: 28px;
+    }
+    .breadcrumb-current-page-mobile{
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .current-project__instruction,
+    .current-project__information-block,
+    .current-project__investors-item h2{
+        font-size: 14px;
+    }
+    .current-project__investors-item h2:last-child{
+        text-align: right;
+    }
+    .current-project__support-button{
+        white-space: nowrap;
+        align-self: center;
+        font-family: 'Inter', serif;
+        font-size: 18px;
+    }
+    .current-project__donate-title,
+    .current-project__investors-title{
+        font-size: 18px;
+    }
+    #breadcrumbs{
+        display: none;
+    }
+    .current-project{
+        margin-top: 0 !important;
+    }
+    .current-project__share{
+        display: none;
+    }
+    .current-project__mobile-share{
+        display: block;
+    }
+    #footer{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .footer__tablet-copyright-text{
+        display: none;
+    }
+    .footer__mobile-copyright-text{
+        display: block;
+    }
+    .footer__information-links{
+        padding-top: 32px;
+    }
+    .footer__site-title{
+        padding: 8px;
+    }
+    .main-page__cta h1{
+        font-size: 42px;
+        font-weight: 700;
+        width: 100%;
+        line-height: 52px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .main-page__orderCallback{
+        top: -180px;
+        right: 20px;
+    }
+    .main-page__orderCallback svg{
+        height: 44px;
+        width: 44px;
+    }
+    .main-page__cta{
+        padding:20px 25px;
+    }
+    .main-page__more-button{
+        width: 100%;
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .main-page__completed .projects__list,
+    .main-page__ongoing .projects__list{
+        grid-template-columns: repeat(3, 100%);
+        gap: 0;
+        width: 100%;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        justify-content: flex-start
+    }
+    .main-page__completed .projects__list > .project-item:first-child {
+        margin-right: 10px; /* Небольшой отступ справа */
+    }
+    .main-page__benefits-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-page__content,
+    .main-page__ongoing,
+    .main-page__completed,
+    .main-page__benefits{
+        padding: 0;
+        margin-bottom: 100px;
+    }
+    .projects__look-all button{
+        margin: 0;
+    }
+    .main-page__completed h1, .main-page__ongoing h1{
+        margin-bottom: 0;
+        padding: 8px 0;
+    }
+    .projects__look-all button{
+        font-family: Inter, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .current-project__project-cost h3, .current-project__project-total-money-collected h3{
+        font-size: 14px !important;
+    }
+    .header__logo{
+        justify-content: flex-start;
+    }
+    .header__logo img{
+        width: auto;
+        transform: scale(1.5);
+    }
+}
+
+
+

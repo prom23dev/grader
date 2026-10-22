@@ -1,0 +1,294 @@
+.projects{
+    margin-top:88px;
+    margin-bottom: 112px;
+    padding: 0 166px;
+}
+.projects h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.projects__list{
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects__list-item{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    padding: 40px 20px;
+    border: 1px solid var(--grey-color-20);
+}
+.projects__list-item h3{
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.projects__image{
+    width: 50%;
+    margin-bottom: 20px;
+    height: 260px;
+}
+.projects__image:first-of-type {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.projects__image:last-of-type {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.projects__address{
+    border-bottom:2px solid #FFD800;
+    padding-top:20px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.projects__information{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.projects__information-item{
+    padding:8px 8px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+}
+.projects__details-button{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    color:#474A51;
+    border:2px solid #FFD800;
+    border-radius: 8px;
+    padding:16px 32px;
+    font-family: 'Inter';
+}
+.projects__pagination{
+    margin-top:36px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 356px);
+    text-align: center;
+    align-items: center;
+}
+.projects__pagination a{
+    display: flex;
+}
+.projects__pagination--next-page{
+    cursor: pointer;
+    justify-self: flex-end;
+}
+.projects__pagination--prev-page{
+    cursor: pointer;
+    justify-self: flex-start;
+}
+.projects__pagination--prev-page svg path {
+    stroke: #BDBDBD;
+}
+.projects__pagination--prev-page svg.active path {
+    stroke: #333333;
+}
+
+
+.projects__main--content{
+    padding: 0;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 168px;
+}
+.completed-project__title-and-share{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:8px 0;
+}
+.completed-project__title-and-share svg:hover{
+    fill:#474A51 ;
+}
+.completed-project__share{
+    cursor: pointer;
+}
+.completed-project__address-annotation{
+    color:#474A51;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.completed-project__title-and-share h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.completed-project__images{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+.completed-project__images img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.completed-project__date-and-username{
+
+    padding:4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.completed-project__date-and-username h3{
+    color:#FFA500;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.completed-project__project-cost, .current-project__project-total-money-collected{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC;
+    padding:8px 0;
+}
+.completed-project__project-cost h3, .current-project__project-total-money-collected h3{
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #474A51;
+}
+.completed-project__information-block{
+    padding: 20px 0;
+}
+.completed-project__support-button{
+    display: flex;
+    align-self: flex-start;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #FFD800;
+    padding:16px 64px;
+    border-radius: 8px;
+    color:#474A51;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+.completed-project__budget{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.completed-project__grading-addition-material--text{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#474A51;
+    padding: 8px 0;
+}
+.completed-project__description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom:24px;
+    margin-top:8px;
+    padding: 8px 0;
+    color:#474A51;
+}
+.completed-project__investors{
+    margin-top:28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 200px;
+}
+.completed-project__investors-item h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.completed-project__investors-title{
+    color: #474A51;
+    font-weight: 700;
+    text-align: center
+}
+.completed-project__investors-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.completed-project__investors-item{
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    padding: 16px 20px 4px;
+    align-items: center;
+    justify-content: space-between
+}
+.completed-project__table_caption h2{
+    color: #474A51;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.completed-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 168px;
+}
+.projects__pictures{
+    display: flex;
+    /*height: 200px;*/
+    min-height: 260px;
+    width: 100%;
+
+}

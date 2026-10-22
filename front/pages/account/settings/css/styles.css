@@ -1,0 +1,325 @@
+.settings{
+    padding: 20px 40px;
+    margin: 80px 168px 200px;
+}
+.settings__block{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.settings__block h1{
+    font-family: Inter, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.settings__choose-bar{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+.settings__choose-bar svg{
+    display: none;
+}
+.settings__choose-bar button{
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    cursor: pointer;
+    color: #474A51;
+    padding: 0 20px;
+    border: 1px solid #D9DDE5;
+    border-radius: 6px;
+    background-color: transparent;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.settings__choose-bar button:hover,
+.settings__choose-bar button.active{
+    border-color: #FFD800;
+    background-color: #FFD800;
+    color: #474A51;
+}
+#settings__notification__mailing li{
+    padding: 24px 20px;
+    border-bottom: 1px solid #CCCCCC
+}
+#settings__notification__mailing ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.notification-settings-title,
+.password-settings-title{
+    display: none;
+}
+.switch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+}
+.switch input {
+    display: none;
+}
+.slider{
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slider.round {
+    border-radius: 12px;
+    background-color: #CCCCCC;
+    width: 48px;
+    height: 24px
+}
+input:checked + .slider {
+    background-color: #FFA500;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(28px);
+}
+#notification-settings-title,
+#password-settings-title{
+    display: none;
+}
+.change-password-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+.form-label{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    gap: 8px;
+    position: relative;
+}
+#old-password-input{
+
+}
+.label-text{
+    color: #474A51;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 0;
+}
+.password-hint{
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.password-control {
+    position: absolute;
+    top: 75%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    fill: none;
+    stroke: #474A51;
+    transition: stroke 0.3s ease, transform 0.3s ease;
+}
+.password-control.closed {
+    display: block;
+}
+
+.password-control.open {
+    display: none;
+}
+.required::before {
+    content: "*";
+    color: #FF4000;
+    margin-right: 4px;
+}
+.form-label input{
+    padding: 16px 0 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    transition: all 0.3s;
+}
+.form-label input.error{
+    border-bottom: 1px solid #FF4000;
+}
+.settings__password___save-password-button{
+    display: flex;
+    align-self: flex-start;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #FFD800;
+    padding:16px 64px;
+    border-radius: 8px;
+    color:#474A51;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.settings__password___save-password-button:hover{
+    color: white;
+    background-color: #FFD800;
+}
+.form-error-message{
+    position: absolute;
+    top: 100%;
+    color: #FF4000;
+    font-size: 14px;
+    margin-top: 6px;
+}
+#success-change-dialog{
+    padding: 0;
+    width: 1020px;
+    height: 368px;
+    border-radius: 8px;
+    border:none;
+}
+.success-dialog__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 80px;
+}
+.success-dialog__content h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 0;
+    line-height: 44px;
+}
+@media (max-width: 1024px) {
+    .settings{
+        margin: 60px 40px 200px;
+    }
+}
+/* Mobile */
+@media (max-width: 765px) {
+    .settings{
+        margin: 0 0 100px;
+    }
+    .settings__block h1{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        padding-left: 0;
+    }
+    #settings__notification__mailing h2{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .settings__choose-bar{
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+        gap: 16px;
+    }
+    .settings__choose-bar svg{
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+    .settings__choose-bar button{
+        gap: 41px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        font-family: Inter, sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        padding: 16px 0;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #cccccc;
+        background-color: transparent;
+    }
+    .settings__choose-bar button:hover,
+    .settings__choose-bar button.active{
+        background-color: transparent;
+        border-bottom: 1px solid #cccccc;
+    }
+    .switch{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    #settings__notification__mailing li{
+        padding:20px 0;
+    }
+}

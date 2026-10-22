@@ -1,0 +1,277 @@
+.my-profile{
+    margin-top: 80px;
+    padding: 0 168px;
+    margin-bottom: 200px;
+}
+.my-profile__edit-block{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.my-profile__edit-block h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.my-profile__edit-block button{
+    cursor: pointer;
+    padding: 10px 0;
+}
+.my-profile__list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.my-profile__item{
+    color: #474A51;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.my-profile__item input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #CCCCCC;
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    outline: none;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    background:inherit;
+}
+.my-profile__item label,
+.my-profile__item h4{
+    padding: 4px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.my-profile__gender-variant label{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.save-changes-button{
+    font-family: 'Inter', serif;
+    align-items: center;
+    width: 250px;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+    font-weight: 700;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: transparent;
+    color:#474A51;
+    padding:16px 64px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #cccccc;
+}
+#changes-dialog{
+    padding: 40px;
+    width: 1020px;
+    height: 368px;
+    border-radius: 8px;
+    border: none;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+}
+#changes-dialog p{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 0;
+    line-height: 44px;
+}
+#changes-dialog form{
+    display: flex;
+}
+.dialog__choose-content {
+    display: inline-flex;
+    text-align: center;
+    gap: 20px
+}
+/*.dialog{*/
+/*    padding: 40px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+/*.dialog::backdrop {*/
+/*    background-color: rgba(0, 0, 0, 0.5); !* Полупрозрачный фон *!*/
+/*}*/
+.save-changes-button:hover {
+    color: white;
+    background-color: #cccccc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.save-changes-button:disabled:hover {
+    background-color: inherit;
+    color: inherit;
+}
+.save-changes-button:disabled{
+    opacity: 0.5;
+}
+.discard-changes-button{
+    font-family: 'Inter', serif;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding:16px 64px;
+    color:#474A51;
+    border: 2px solid #FFD800;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.discard-changes-button:hover {
+    color: white;
+    background: #FFD800;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.my-profile__save-or-discard--block{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    gap: 20px;
+}
+#gender-choose span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.my-profile__gender__radio-button {
+    display: none;
+}
+.my-profile__gender-variant {
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.my-profile__gender-variant span {
+    position: relative;
+    cursor: pointer;
+    margin-left: 36px;
+    font-weight: 700;
+}
+.my-profile__gender-variant::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #FFA500;
+    border-radius: 50%;
+}
+.my-profile__gender__radio-button:checked + span.radio-male::after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FFA500;
+}
+.my-profile__gender__radio-button:checked + span.radio-female::after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FFA500
+}
+.support-project__payment-variant-block{
+    display: flex;
+    gap: 16px;
+    align-items: center
+}
+#edit-button-mobile{
+    display: none;
+}
+@media (max-width: 1024px) {
+    .my-profile{
+        margin-top: 60px;
+        padding: 0 40px;
+    }
+    #changes-dialog{
+        width: 860px;
+    }
+}
+/* Mobile */
+@media (max-width: 765px) {
+    .my-profile{
+        margin-top: 60px;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+    .my-profile__save-or-discard--block{
+        flex-direction: column;
+    }
+    .edit-button{
+        display: none;
+    }
+    #edit-button-mobile{
+        display: block;
+    }
+    #changes-dialog{
+        padding:0;
+    }
+    #changes-dialog form{
+        padding:20px;
+        flex-direction: column;
+    }
+    .dialog__choose-content{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #changes-dialog p{
+        font-size: 22px;
+    }
+    .save-changes-button,
+    .discard-changes-button{
+        font-size: 18px;
+    }
+}

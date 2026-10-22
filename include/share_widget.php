@@ -1,0 +1,14 @@
+<div class="footer-share">
+    <button class="footer-share__trigger" type="button" aria-expanded="false" aria-controls="project-share-menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5" r="2.5" stroke="currentColor" stroke-width="1.8"></circle><circle cx="6" cy="12" r="2.5" stroke="currentColor" stroke-width="1.8"></circle><circle cx="18" cy="19" r="2.5" stroke="currentColor" stroke-width="1.8"></circle><path d="m8.3 10.8 7.4-4.4M8.3 13.2l7.4 4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
+        <span>Поделиться</span>
+    </button>
+    <div class="footer-share__menu" id="project-share-menu" role="menu">
+        <button type="button" class="footer-share__item" data-share-service="max"><span class="footer-share__icon footer-share__icon--max" aria-label="max"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_MAX.svg" alt="MAX"></span>MAX</button>
+        <button class="footer-share__item" type="button" data-share-service="vk"><span class="footer-share__icon footer-share__icon--vk" aria-label="vk"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg" alt="VK"></span>ВКонтакте</button>
+        <button class="footer-share__item" type="button" data-share-service="telegram"><span class="footer-share__icon footer-share__icon--tg" aria-label="telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m21.5 3.5-3 16.1c-.2 1.1-.8 1.4-1.6.9l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.8.4l.3-4.6 8.4-7.6c.4-.4-.1-.6-.6-.2L7.1 13.9l-4.4-1.4c-1-.3-1-1 .2-1.5L20.1 4c.9-.3 1.7.2 1.4-.5z"></path></svg></span>Telegram</button>
+        <button class="footer-share__item" type="button" data-share-service="whatsapp"><span class="footer-share__icon footer-share__icon--wa" aria-label="whatsapp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a8.9 8.9 0 0 0-7.7 13.4L3 21l4.8-1.3A9 9 0 1 0 12 3zm0 16a7 7 0 0 1-3.6-1l-.3-.2-2.8.8.8-2.7-.2-.3A7 7 0 1 1 12 19zm3.8-5.2c-.2-.1-1.2-.6-1.4-.6-.2-.1-.3-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1a5.7 5.7 0 0 1-2.8-2.5c-.2-.3 0-.4.1-.6l.4-.5c.1-.1.1-.3 0-.4l-.6-1.4c-.2-.4-.4-.3-.5-.3h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 3.9 3.4 1.5.6 1.8.5 2.1.5.3 0 1.2-.5 1.4-.9.2-.4.2-.8.1-.9z"></path></svg></span>WhatsApp</button>
+        <button class="footer-share__item" type="button" data-share-service="ok"><span class="footer-share__icon footer-share__icon--ok" aria-label="ok"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Odnoklassniki%202023.svg" alt="Одноклассники"></span>Одноклассники</button>
+        <button class="footer-share__item" type="button" data-share-service="copy"><span class="footer-share__icon footer-share__icon--copy">↗</span>Скопировать ссылку</button>
+    </div>
+</div>

@@ -1,0 +1,141 @@
+.my-projects{
+    padding: 20px 40px;
+    margin: 80px 168px 200px;
+}
+.my-projects h1{
+    font-family: Inter, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.my-projects__search__block{
+    margin-top: 40px;
+    display: flex;
+    height: 40px;
+    width: 360px;
+}
+.my-projects__search__input-field{
+    width: 360px;
+    border: 0;
+    outline: none;
+    font-size: 18px
+}
+
+.my-projects__projects-history{
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 20px;
+}
+.my-projects__projects-item{
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid #CCCCCC
+}
+.my-projects__projects-item__date-and-status{
+    display: flex;
+    justify-content: space-between;
+}
+.my-projects__projects-item__information{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.my-projects__projects-item--status,
+.my-projects__projects-item__information h5{
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.my-projects__projects-item__information p,
+.my-projects__projects-item--date{
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.my-projects__not-yet-information-block{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+.my-projects__not-yet-information-block h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 20px 0;
+}
+.my-projects__not-yet-information-block .create-project__create-button{
+
+}
+.create-project__create-button{
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #FFD800;
+    padding:16px 64px;
+    border-radius: 8px;
+    color:#474A51;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.create-project__create-button:hover {
+    color: white;
+    background-color: #FFD800;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .my-projects{
+        margin: 60px 40px 200px;
+    }
+}
+/* Mobile */
+@media (max-width: 765px) {
+    .my-projects{
+        margin: 0 0 100px;
+    }
+    .my-projects__search__block{
+        margin-top: 40px;
+        display: flex;
+        height: 36px;
+        width: 280px;
+    }
+    .my-projects__search__input-field{
+        width: 280px;
+        border: 0;
+        outline: none;
+        font-size: 18px
+    }
+    .my-projects h1{
+        text-align:center;
+    }
+    .my-projects__not-yet-information-block h3{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .create-project__create-button{
+        white-space: nowrap;
+        text-align: center;
+        font-family: Inter, sans-serif;
+    }
+}

@@ -1,0 +1,313 @@
+.reviews{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.reviews__main--content{
+    padding: 0 40px;
+}
+.reviews__main--content h1{
+    padding: 8px 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.reviews__list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px;
+    padding: 20px 80px;
+}
+
+.reviews__send-review{
+    padding: 20px 80px;
+}
+.reviews__send-review p{
+    margin-bottom: 4px;
+    padding: 8px 0;
+}
+.reviews__send-review-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.reviews__send-review-form a{
+    text-decoration: none;
+    max-width: 360px;
+}
+.reviews__send-review-input{
+    font-size: 14px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--grey-color-20);
+    max-height: 192px;;
+    height: 192px;
+    padding: 10px;
+    font-family: Inter, sans-serif;
+    outline-color: #FFD800;
+    resize: none;
+}
+
+.reviews__item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+.reviews__item--header{
+    display: flex;
+    gap: 40px;
+    padding: 8px 0;
+}
+.reviews__item--content,
+.reviews__item--date{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.reviews__send-review p,
+.reviews__item--username{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.reviews__item--content{
+    padding: 8px 0;
+}
+.reviews__mobile-show-more {
+    display: none;
+}
+.reviews_send-review--button{
+    width: 360px;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Inter, sans-serif;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: inherit;
+    padding:16px 32px;
+    border-radius: 8px;
+    color:#474A51;
+    border: 2px solid #FFD800;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.reviews_send-review--button:hover{
+    background:#FFD800;
+    color: white;
+}
+#failed-send-review-dialog .close-dialog,
+#success-send-review-dialog .close-dialog{
+    display: flex;
+    justify-content: flex-end;
+}
+#failed-send-review-dialog .close-dialog svg,
+#success-send-review-dialog .close-dialog svg{
+    cursor: pointer;
+}
+#success-send-review-dialog{
+    top: 25%;
+}
+
+#success-send-review-dialog h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 0;
+}
+#failed-send-review-dialog h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+#failed-send-review-dialog .modal__choose-block{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#failed-send-review-dialog a{
+    text-decoration: none;
+}
+#failed-send-review-dialog .modal__go-to-auth{
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 360px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #FFD800;
+    padding:16px 64px;
+    border-radius: 8px;
+    color:#474A51;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#failed-send-review-dialog .modal__go-to-auth:hover{
+    color: white;
+    background-color: #FFD800;
+}
+#failed-send-review-dialog .modal__failed-close{
+    width: 360px;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Inter, sans-serif;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: inherit;
+    padding: 16px 64px;
+    border-radius: 8px;
+    color: #474A51;
+    border: 2px solid #FFD800;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#failed-send-review-dialog .modal__failed-close:hover{
+    background: #FFD800;
+    color: white;
+}
+.success-send-review{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px
+}
+.success-send-review__message{
+    margin-top: 20px;
+}
+@media (max-width: 1024px){
+    .reviews{
+        margin-top: 60px;
+    }
+    #failed-send-review-dialog{
+        padding: 80px 40px;
+    }
+}
+@media (max-width: 765px){
+    .reviews__send-review p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .reviews__send-review-input{
+        box-sizing:border-box;
+    }
+    .reviews__main--content{
+
+    }
+    .reviews{
+        margin-top: 0;
+    }
+    .reviews__mobile-show-more{
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: #FFA500;
+        padding: 8px 0;
+        font-family: Inter, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    .reviews__item--content,
+    .reviews__main--content,
+    .reviews__send-review,
+    .reviews__list{
+        padding: 0;
+    }
+    .reviews__list{
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .reviews_send-review--button,
+    .reviews__send-review-form a
+    {
+        max-width: 100%;
+    }
+    /*Alternative*/
+
+    /*.reviews__item--content{*/
+    /*    max-height: calc(1.3em * 3);*/
+    /*    overflow: hidden;*/
+    /*    text-overflow: ellipsis;*/
+    /*    white-space: normal;*/
+    /*}*/
+
+    .reviews__item--content{
+        padding: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .reviews__main--content h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .reviews__item--header{
+        padding: 4px 0;
+        justify-content: space-between;
+    }
+    .reviews__item--username,
+    .reviews__item--date{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .reviews__item--content.expanded {
+        -webkit-line-clamp: unset;
+        display: block;
+        overflow: visible;
+    }
+    #failed-send-review-dialog h1{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+    }
+    #failed-send-review-dialog .modal__failed-close,
+    #failed-send-review-dialog .modal__go-to-auth{
+        width: 100%;
+    }
+
+    #failed-send-review-dialog .modal__choose-block{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    #failed-send-review-dialog{
+        padding: 60px 20px;
+        top: 25%;
+    }
+}

@@ -1,0 +1,115 @@
+.notifications{
+    margin: 80px 168px 200px;
+}
+.notifications__block{
+    padding: 20px 40px;
+}
+.notifications__block h1{
+    font-family: Inter, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.notifications__list{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.notifications__list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border-bottom: 1px solid #CCCCCC
+}
+.notifications__list-item p{
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.notifications__not-yet-notification-block{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+.notifications__not-yet-notification-block h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 20px 0;
+}
+.create-project__create-button{
+    font-family: Inter, sans-serif;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #FFD800;
+    padding:16px 64px;
+    border-radius: 8px;
+    color:#474A51;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.create-project__create-button:hover {
+    color: white;
+    background-color: #FFD800;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+    .notifications{
+        margin: 60px 40px 200px;
+    }
+}
+/* Mobile */
+@media (max-width: 765px) {
+    .notifications{
+        margin: 0 0 100px;
+    }
+    .notifications__block h1{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .notifications__list-item p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .notifications__not-yet-notification-block .create-project__create-button{
+        white-space: nowrap;
+    }
+    .notifications__not-yet-notification-block h3{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .notifications__not-yet-notification-block{
+        margin-top: 20px;
+        gap: 20px;
+    }
+}
