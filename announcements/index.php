@@ -13,12 +13,6 @@ $announcementsFilter = buildAnnounceGeoDbFilter();
 if ($announcementsFilter && !hasActiveAnnouncements($announcementsFilter)) {
     $announcementsFilter = [];
 }
-if (isset($_GET['_debug'])) {
-    echo '<pre style="position:fixed;top:0;left:0;background:#fff;z-index:99999;max-height:80vh;overflow:auto">';
-    echo 'GLOBALS has key: ' . (array_key_exists('announcementsFilter', $GLOBALS) ? 'YES' : 'NO') . "\n";
-    print_r($GLOBALS['announcementsFilter'] ?? null);
-    echo '</pre>';
-}
 ?>
 <?php
 $APPLICATION->IncludeComponent(
@@ -36,6 +30,7 @@ $APPLICATION->IncludeComponent(
         "LIST_PROPERTY_CODE" => array(),
         "DETAIL_FIELD_CODE" => array("NAME", "ACTIVE_FROM", "DETAIL_TEXT"),
         "DETAIL_PROPERTY_CODE" => array(),
+        "USE_FILTER" => "Y",
         "FILTER_NAME" => "announcementsFilter",
         "CHECK_DATES" => "Y",
         "DISPLAY_TOP_PAGER" => "N",
@@ -62,7 +57,7 @@ $APPLICATION->IncludeComponent(
         "SHOW_404" => "N",
         "CHECK_PERMISSIONS" => "N",
         "USE_PERMISSIONS" => "N",
-        "CACHE_TYPE" => "N",
+        "CACHE_TYPE" => "A",
         "CACHE_TIME" => "3600",
         "CACHE_FILTER" => "Y",
         "CACHE_GROUPS" => "Y",

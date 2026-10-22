@@ -102,11 +102,21 @@ body { background: #fff; }
 }
 #create-project-container .content { max-width: 960px; margin: 0 auto; }
 
+/* Frame the project creation form with the site's shared visual language. */
+#create-project-form {
+    padding: 32px;
+    border: 1px solid var(--project-line);
+    border-radius: 16px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
 @media (max-width: 1024px) {
     #create-project-container.container { padding: 20px 40px 64px; }
 }
 @media (max-width: 765px) {
     #create-project-container.container { padding: 16px 12px 48px; }
+    #create-project-form { padding: 20px 16px; }
 }
 #type-of-work #work-type option{
     padding:16px 40px;

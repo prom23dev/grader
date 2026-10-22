@@ -158,6 +158,7 @@ class VersionSeedTestProjects20261022140000 extends Version
                 'IBLOCK_ID' => PROJECTS_IBLOCK_ID,
                 'IBLOCK_SECTION_ID' => 1,
                 'NAME' => $name,
+                'CODE' => $xmlId,
                 'XML_ID' => $xmlId,
                 'ACTIVE' => $active,
                 'PROPERTY_VALUES' => $props,
